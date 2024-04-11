@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+                body{
+                        margin: 0px;
+                        padding: 0px;
+                }
+               article{
+                background-color:pink;
+               }
+               ul li a{
+                text-decoration: none;
+                color: rgb(14, 14, 34);
+               }
+               aside{
+                float: left;
+                width: 200px;
+                height: 500px;
+             
+               }
+               
+               figure{
+                display: inline-block;
+               }
+               section{
+                width: 400px;
+                height: 200px;
+                display: flex;
+                background-color: pink;
+               }      
+               section>div{
+                width: 50px;
+                height: 50px;
+               }         
+               p[title^="L"]{
+                color: rgb(18, 120, 18);
+               }
+               input[type="checkbox"]:checked {
+                outline: 2px solid rgb(46, 3, 147);
+                
+               }
+               /*Disabled*/
+               input[type="text"]:disabled{
+                background-color: rgb(226, 221, 221);
+                color: black;
+               }
+               /* Focus */
+               input[type="text"]:focus{
+                background-color: rgb(172, 203, 237);
+               }
+               /* Nth child  */
+               p:nth-child(3){
+                color: red;
+                
+               }
+              #pragraph::first-letter{
+                color: green;  
+                font-size: 40px;      
+                }
+                ::selection{
+                        background-color: rgb(114, 97, 243);
+                        color: white;
+                }
+                #pragraph::first-line{
+                        color: blue;
+                }
+                .plus::after{
+                        content: " +";
+                }
+                .plus::before{
+                        content: "- hello ";
+                }
+                #para{
+                        background-color: red;
+                        margin: 20px;
+                        margin-top: 30px;
+                        margin-bottom: 50px;
+                        margin-left: 400px;
+                        margin-right: 40px
+                }
+
+               img{
+                width: 200px;
+                display: block;
+                margin: 20px auto; 
+                
+               }
+                #woody{
+                        background-color: red;
+                }
+                #buzz{
+                        background-color: green;
+                }
+                h1{
+                        padding-left: 100px;
+                        margin-bottom: 100px;
+                }
+
+                #section{
+                        width: 200px;
+                        height: 200px;
+                        background-color: white;
+                        border: 20px ridge red;
+                        margin: 30px;
+                        margin-left: 50px;
+                        /* margin-top: 50px; */
+                        padding: 10px;
+
+
+                }
+                #absolute{
+                        width: 50px;
+                        height: 10px;
+                        background-color: rebeccapurple;
+                }
+                #relative{
+                        width: 50%;
+                        height: 10px;
+                        background-color: limegreen;
+                }
+                #outerdiv{
+                        width: 500px;
+                        border: 2px solid red;
+                        padding: 3px;
+
+                }
+                ul+p{
+                       color: red; 
+                       /* font-size: 2em; */
+                       font-size: 5vw;
+                       margin-top: 100px;
+                       text-align: center;
+                       text-shadow: 2px 2px 5px green ;
+
+                }
+                p[title="Lorem"]{
+                        text-indent: 20px;
+                }
+                #static{
+                        background-color: red;
+                        width: 100px;
+                        height: 100px;
+                        position: static;
+
+                }
+
+                #relative{
+                        background-color: rgb(0, 255, 149);
+                        width: 100px;
+                        height: 100px;
+                        position: relative;
+                        left: 200px;
+                }
+                #absolute{
+                        background-color: rgb(60, 0, 255);
+                        width: 100px;
+                        height: 100px;
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+
+                }
+
+                #fixed{
+                        background-color: rgb(231, 0, 143);
+                        width: 100px;
+                        height: 100px;
+                        position: fixed;
+                        left: 200px;
+                        
+
+                }
+                #cssdiv{
+                        width: 200px;
+                        height: 200px;
+                        border: 2px solid grey;
+                        margin: 50px auto;
+                        background-color: yellowgreen;
+                        background-image: url(./epam_img2.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        
+                        transform: skewX(20deg);
+                        
+                }
+
+                
+        </style>
+</head>
+<body>
+        <article>
+                <header>
+                        <h1>Hello</h1>
+                </header>
+                <p>Lorem ipsum dolor sit amet.</p>
+        </article>
+        <!-- <div class="box" id="fixed"></div> -->
+        <nav>
+                <ul type="none" >
+                        <li><a href="#link">Shows</a></li>
+                        <li><a href="#link">Shows</a></li>
+                        <li><a href="#link">Shows</a></li>
+                        <li><a href="#link">Shows</a></li>
+                        <li><a href="#link">Shows</a></li>
+                </ul>
+        </nav>
+        <aside>
+                <h1>Lorem100 </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum exercitationem pariatur mollitia esse, dolorem iure praesentium magnam earum culpa quasi laborum eos maxime doloribus harum voluptatum. Totam iste ipsa nemo voluptate sequi atque? Excepturi illo ratione quia quasi debitis laborum asperiores, quod, eaque obcaecati ducimus cum perspiciatis facere blanditiis <mark>Hello</mark> eum!</p>
+        </aside><br>
+        <figure>
+                <img src="./epam_img2.jpg" alt="">
+                <figcaption>World image</figcaption>
+        </figure>
+        <label for="">Address</label><br>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+        
+        <fieldset>
+                <legend>blanditiis</legend>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis aliquid at, totam vel rem corrupti quis, optio eos quibusdam veniam illo inventore perspiciatis soluta. Quas ut perferendis cumque eius enim voluptatem blanditiis omnis minus mollitia in incidunt aliquid, dolorum illo sequi totam molestias quo doloremque dolor deleniti velit accusantium cum similique repellendus obcaecati? At accusamus officia, nisi quas facilis iure magni dolorum, in pariatur corporis inventore expedita voluptatem alias tempora illo sed labore atque quidem asperiores recusandae aut veniam voluptas aliquam debitis. Eaque rem laboriosam repellendus quos non corporis tenetur rerum id ad natus dolore dolor, laborum sunt mollitia quo.
+        </fieldset>
+
+        <select name="hi" id="" >
+                <option value="1">orange</option>
+                <option value="2">Apple</option>
+                <option value="3">Grapes</option>
+        </select>
+       <output>hi</output>
+       <input type="text" readonly disabled id="" value="Varunkumar">
+       <!-- <input type="password" name="" id="">
+       <input type="submit" name="" id="">
+       <input type="radio" name="a" id="">
+       <input type="radio" name="a" id="">
+       <input type="checkbox" name="" id="">
+       <input type="checkbox" name="" id="">
+       <button>Submit</button>
+       <input type="date" name="" id=""> -->
+       <input type="datetime-local" name="" id="datetime">
+
+        <script>
+                var dateTime=document.getElementById('datetime');
+                var DateT=dateTime.value;
+                console.log(DateT);
+        </script>
+
+        <br>
+        <label for="">Select your favourite cars</label><br>
+        <input type="checkbox" name="Vechile1" id="Honda"><label for="">Honda</label>
+        <input type="checkbox" name="Vechile2" id="Toyoto"><label for="">Toyoto</label>
+        <input type="checkbox" name="Vechile3" id="BAW"><label for="">BAW</label>
+        <br>
+        <label for="">Select your Gender</label>
+        <input type="radio" name="a" id="">Male
+        <input type="radio" name="a" id="">Female
+        <input type="radio" name="a" id="">Not mentioned
+
+        <br>
+        <br>
+        <input type="text" name="" id=""list="browsers">
+        <datalist id="browsers">
+                <option value="Internet Explorer"></option>
+                <option value="Firefox"></option>
+                <option value="chrome"></option>
+                <option value="opera"></option>
+                <option value="safari"></option>
+        </datalist>
+
+        <input type="hidden" name="secretmessage" id="Hello ">
+
+        <input type="number" name="" id="" max="5" min="1" >
+        <input type="range" name="points" id="" min="0" max="10">
+
+        <input type="text" name="" id="" placeholder="varun" disabled>
+
+        <input pattern="regexp" name="" id="">
+<br><br>
+        <label for="">Interminate
+                <progress max="100"></progress>
+        </label>
+        <br><br>
+        <label for="progress1">Progress : 0%</label>
+        <progress max="10" value="0" id="progress1"></progress>
+<br><br>
+        <label for="progress2">progress : .5 of 0</label>
+        <progress max="0" value="0.5" id="progress2"></progress>
+
+        <br><br>
+        <label for="progress3"> progress :100%</label>
+        <progress max="3243" value="2345" id="progress3"></progress>
+        <br><br>
+        <label for="" >progress : 75% <progress max="0.8" value="0.6"></progress></label>
+
+        <br><br><br><br>
+        <section>
+                <div style="background-color: red;"></div>
+                <div style="background-color: green;"></div>
+                <div style="background-color: aqua;"></div>
+        </section>
+
+        <p title="Lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ipsum accusamus eligendi illo quaerat, perspiciatis cumque mollitia corrupti nulla eum aut iste nam enim porro ea odio ratione esse voluptates error sit. Suscipit enim nesciunt voluptatem ut asperiores dolorum sint autem corporis, dolore neque, aspernatur ab quo ex quidem esse porro architecto quam saepe, consequatur veniam eum exercitationem vel! Molestiae cum eaque esse maxime? Ratione, fugiat? Quas rerum quam qui natus odit doloribus magnam, nulla dicta delectus architecto cum facilis debitis, nihil error earum amet doloremque culpa, ab sint. Perspiciatis sapiente nam nesciunt doloremque dolores at atque iste hic ducimus.</p>
+
+
+        <input type="text" name="" id="" value="varunkumar">
+
+        <br>
+        <input type="text" name="" id="cool"><br>
+
+        <div>
+                <p>Hello varun</p>
+                <p>Hello varun</p>
+                <p>Hello varun</p>
+                <p>Hello varun</p>
+                <p>Hello varun</p>
+        </div>
+
+        <br>
+        <p id="pragraph">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, cumque. Asperiores in odit numquam, minus eos suscipit illum, sapiente, sequi ducimus nostrum eum vero quaerat laboriosam. Nihil odit laborum neque facere delectus. Fugiat tempora fugit harum perspiciatis error laudantium illum dolore delectus cupiditate repudiandae. Ea esse corrupti repudiandae ullam omnis ipsum similique dignissimos officia soluta, illo, libero dolorem voluptatibus enim iure autem vitae, temporibus saepe! Tempora, nemo asperiores impedit, sit nobis molestiae deleniti voluptatibus saepe consequuntur id doloremque repellat. Vitae ratione, suscipit id cumque quisquam eaque velit temporibus similique facere. Facilis aspernatur maiores obcaecati quisquam vero consequatur voluptas nostrum non?
+        </p><br><br><br>
+        
+        <p class="plus">Woody</p>
+        <p class="plus">Buzz</p>
+        <p class="plus">Rex</p>
+
+
+        <br><br><br>
+        <p id="para">hello varun</p>
+
+        <br><br><br>
+
+        <img src="./epam_img2.jpg" alt="">
+        <h1 id="woody">Sherrif Woody</h1>
+        <img src="./epam_img2.jpg" alt="">
+        <h1 id="buzz">Buzz Lightyear</h1>
+        <br><br>
+        <section id="section"></section>
+        <br><br>
+        <h3>Absolute (fixed) units</h3>
+        <div id="absolute"></div>
+        <ul>
+                <li>cm - centimetere</li>
+                <li>mm -millimeter</li>
+                <li>in -inches</li>
+                <li>px -pixels</li>
+                <li>pt -points</li>
+                <li>pc -picas</li>
+        </ul>
+        <br>
+        <h3>relative (fluid) units</h3>
+        <div id="outerdiv"><div id="relative"></div></div>
+        <ul>
+                <li>em -Rel to container</li>
+                <li>ex -rel to x height of current font</li>
+                <li>ch -rel to the width of 0</li>
+                <li>rem -rel to font-size of root element</li>
+                <li>vw - rel to 1% of viewport width</li>
+                <li>vh -rel to 1% of viewport height</li>
+                <li>vmin -rel to</li>
+                <li>vmax -rel to 1% of viewport larger dimension</li>
+                <li>% -rel to parent element</li>
+        </ul>
+        <p>Varun kumar</p>
+
+        <br><br>
+        <!-- <div class="box" id="static"></div>
+        <div class="box" id="relative"></div>
+        <div class="box" id="absolute"></div> -->
+        <br><br><br><br>
+        <div id="cssdiv"></div>
+
+        <!--BOX SHADOW AND TEXT SHADOW-->
+
+
+</body>
+</html>
